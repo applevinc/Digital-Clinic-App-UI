@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.digital_clinic">
    <application
-        android:label="digital_clinic"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Digital Clinic"
+        android:icon="@mipmap/logo">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
