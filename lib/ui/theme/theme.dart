@@ -12,6 +12,9 @@ class CustomTheme {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0)),
         buttonColor: CustomColors.moodyBlue,
       ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(primary: Colors.white),
+      ),
     );
   }
 }
