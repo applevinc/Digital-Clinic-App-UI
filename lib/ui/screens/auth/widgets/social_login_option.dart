@@ -3,8 +3,29 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sizer/sizer.dart';
 
-class SocialLogins extends StatelessWidget {
-  const SocialLogins({
+class SocialLoginsOption extends StatelessWidget {
+  const SocialLoginsOption({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          'OR CONNECT USING',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        SizedBox(height: 3.1.h),
+        _SocialLogins(),
+        SizedBox(height: 3.1.h),
+      ],
+    );
+  }
+}
+
+class _SocialLogins extends StatelessWidget {
+  const _SocialLogins({
     Key key,
   }) : super(key: key);
 

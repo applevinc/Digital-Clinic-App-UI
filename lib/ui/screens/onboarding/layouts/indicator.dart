@@ -15,7 +15,7 @@ class OnboardingIndicator extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(
-        onboarding.length,
+        onboardingData.length,
         (index) => getIndicator(index, context),
       ),
     );
@@ -33,7 +33,7 @@ class OnboardingIndicator extends StatelessWidget {
         decoration: BoxDecoration(
           color: currentIndex == pageNo
               ? CustomColors.moodyBlue
-              : CustomColors.backgroundColor,
+              : CustomColors.lightMoodyBlue.withOpacity(0.3),
         ),
       ),
     );

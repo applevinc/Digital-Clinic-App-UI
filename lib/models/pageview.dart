@@ -12,7 +12,7 @@ class PageViewModel {
   });
 }
 
-final onboarding = [
+final onboardingData = [
   PageViewModel(
       img: Images.onboarding1,
       title: 'Welcome to Digital Clinic',

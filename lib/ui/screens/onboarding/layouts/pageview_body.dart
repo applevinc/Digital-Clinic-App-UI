@@ -22,22 +22,22 @@ class _PageViewBodyState extends State<PageViewBody> {
     return Container(
       width: double.infinity,
       height: 72.4.h,
-      child: PageView.builder(
+      child: PageView(
         scrollDirection: Axis.horizontal,
-        controller: PageController(initialPage: 0),
-        itemCount: onboarding.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Column(
-            children: [
-              _Image(index: index),
-              SizedBox(height: 5.0.h),
-              _Title(index: index),
-              SizedBox(height: 2.0.h),
-              _Description(index: index),
-              Spacer(),
-            ],
-          );
-        },
+        controller: pageViewModel.pageController,
+        children: [
+          for (final viewData in onboardingData)
+            Column(
+              children: [
+                _Image(imgPath: viewData.img),
+                SizedBox(height: 5.0.h),
+                _Title(value: viewData.title),
+                SizedBox(height: 2.0.h),
+                _Description(value: viewData.description),
+                Spacer(),
+              ],
+            ),
+        ],
         onPageChanged: (pageNo) {
           pageViewModel.updateIndex(pageNo);
         },
@@ -49,17 +49,17 @@ class _PageViewBodyState extends State<PageViewBody> {
 class _Description extends StatelessWidget {
   const _Description({
     Key key,
-    this.index,
+    this.value,
   }) : super(key: key);
 
-  final int index;
+  final String value;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Text(
-        onboarding[index].description,
+        value,
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 11.0.sp,
@@ -72,17 +72,17 @@ class _Description extends StatelessWidget {
 class _Title extends StatelessWidget {
   const _Title({
     Key key,
-    this.index,
+    this.value,
   }) : super(key: key);
 
-  final int index;
+  final String value;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 50),
       child: Text(
-        onboarding[index].title,
+        value,
         textAlign: TextAlign.center,
         style: TextStyle(
           fontSize: 20.0.sp,
@@ -96,10 +96,10 @@ class _Title extends StatelessWidget {
 class _Image extends StatelessWidget {
   const _Image({
     Key key,
-    this.index,
+    this.imgPath,
   }) : super(key: key);
 
-  final int index;
+  final String imgPath;
 
   @override
   Widget build(BuildContext context) {
@@ -107,7 +107,7 @@ class _Image extends StatelessWidget {
       height: 32.4.h,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(onboarding[index].img),
+          image: AssetImage(imgPath),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
             CustomColors.moodyBlue.withOpacity(1.0),
