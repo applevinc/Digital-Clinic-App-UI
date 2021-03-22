@@ -1,3 +1,5 @@
+import 'package:digital_clinic/ui/screens/auth/create_account/create_account.dart';
+import 'package:digital_clinic/ui/screens/auth/forgot_password.dart';
 import 'package:digital_clinic/ui/screens/auth/sign_up.dart';
 import 'package:digital_clinic/ui/screens/auth/widgets/custom_textformfield.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
@@ -28,12 +30,16 @@ class _SignInFormState extends State<SignInForm> {
               'Forgot Password?',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ForgotPasswordPage()),
+              );
+            },
           ),
           SizedBox(height: 8.0.h),
           CustomButton(
             label: 'SIGN IN',
-            color: CustomColors.moodyBlue,
             onPressed: () {
               // Validate returns true if the form is valid, otherwise false.
               if (_formKey.currentState.validate()) {
@@ -45,12 +51,17 @@ class _SignInFormState extends State<SignInForm> {
               }
 
               // go to create account page
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CreateAccountPage(),
+                  ));
             },
           ),
           CustomButton(
             label: 'SIGN UP',
             labelColor: CustomColors.moodyBlue,
-            color: CustomColors.backgroundColor,
+            backgroundColor: CustomColors.backgroundColor,
             onPressed: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => SignUpPage()));

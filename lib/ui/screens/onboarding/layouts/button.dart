@@ -21,7 +21,7 @@ class OnboardingButton extends StatelessWidget {
               },
             )
           : CustomButton(
-              label: 'Lets \' start',
+              label: 'LETS \' START',
               onPressed: () {
                 Navigator.push(
                   context,

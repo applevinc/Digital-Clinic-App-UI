@@ -1,5 +1,7 @@
 import 'package:digital_clinic/ui/images.dart';
+import 'package:digital_clinic/ui/screens/auth/layouts/heading_text.dart';
 import 'package:digital_clinic/ui/screens/auth/layouts/sign_in_form.dart';
+import 'package:digital_clinic/ui/screens/auth/layouts/subheadline_text.dart';
 import 'package:digital_clinic/ui/screens/auth/widgets/social_login_option.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -58,19 +60,8 @@ class _Body extends StatelessWidget {
           color: Colors.white,
           child: Column(
             children: [
-              Text(
-                'Sign In',
-                style: TextStyle(
-                  fontSize: 20.0.sp,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                'Please enter your credentials to proceed',
-                style: TextStyle(
-                  fontSize: 11.0.sp,
-                ),
-              ),
+              AuthHeadingText('Sign In'),
+              AuthSubHeadLine('Please enter your credentials to proceed'),
               SizedBox(height: 3.0.h),
               SignInForm(),
               SizedBox(height: 3.0.h),

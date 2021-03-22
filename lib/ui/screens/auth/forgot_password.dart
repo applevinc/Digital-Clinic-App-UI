@@ -1,13 +1,15 @@
 import 'package:digital_clinic/ui/images.dart';
 import 'package:digital_clinic/ui/screens/auth/layouts/heading_text.dart';
-import 'package:digital_clinic/ui/screens/auth/layouts/sign_up_form.dart';
 import 'package:digital_clinic/ui/screens/auth/layouts/subheadline_text.dart';
-import 'package:digital_clinic/ui/screens/auth/widgets/social_login_option.dart';
+import 'package:digital_clinic/ui/screens/auth/widgets/custom_textformfield.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
+import 'package:digital_clinic/ui/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-class SignUpPage extends StatelessWidget {
+class ForgotPasswordPage extends StatelessWidget {
+  const ForgotPasswordPage({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,13 +61,29 @@ class _Body extends StatelessWidget {
           width: 91.0.w,
           color: Colors.white,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              AuthHeadingText('Sign Up'),
-              AuthSubHeadLine('Please enter your credentials to proceed'),
+              AuthHeadingText('Reset Password'),
+              AuthSubHeadLine('Please enter your email address'),
+              AuthSubHeadLine('A code will be sent to your email'),
               SizedBox(height: 3.0.h),
-              SignUpForm(),
-              SizedBox(height: 3.0.h),
-              SocialLoginsOption(),
+              CustomTextFormField(
+                hintText: 'Email',
+                obscureText: false,
+              ),
+              TextButton(
+                child: Text(
+                  'I didn \'t recieve a code',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                onPressed: () {},
+              ),
+              CustomButton(
+                label: 'CONTINUE',
+                labelColor: Colors.white,
+                //backgroundColor: CustomColors.moodyBlue,
+                onPressed: () {},
+              ),
             ],
           ),
         )
