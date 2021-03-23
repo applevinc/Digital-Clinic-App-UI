@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:digital_clinic/ui/screens/auth/create_account/create_account.dart';
 import 'package:digital_clinic/ui/screens/auth/forgot_password.dart';
 import 'package:digital_clinic/ui/screens/auth/sign_up.dart';
@@ -46,16 +48,21 @@ class _SignInFormState extends State<SignInForm> {
                 // If the form is valid, display a snackbar. In the real world,
                 // you'd often call a server or save the information in a database.
 
-                ScaffoldMessenger.of(context)
-                    .showSnackBar(SnackBar(content: Text('Processing Data')));
-              }
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text('Processing Data'),
+                ));
 
-              // go to create account page
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => CreateAccountPage(),
-                  ));
+                Timer(Duration(seconds: 5), () {
+                  // 5s over, navigate to a new page
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CreateAccountPage(),
+                      ));
+                });
+
+
+              }
             },
           ),
           CustomButton(

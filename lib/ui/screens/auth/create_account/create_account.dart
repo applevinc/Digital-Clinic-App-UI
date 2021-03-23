@@ -1,5 +1,5 @@
-import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info.dart';
-import 'package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info.dart';
+import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/health_info.dart';
+import 'package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info/personal_info.dart';
 import 'package:flutter/material.dart';
 
 class CreateAccountPage extends StatelessWidget {
