@@ -2,6 +2,7 @@ import 'package:digital_clinic/ui/screens/auth/create_account/tabs/components/in
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/current_illness_status.dart';
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/select_blood_group.dart';
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/allergic_reaction_status.dart';
+import 'package:digital_clinic/ui/screens/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:digital_clinic/ui/widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -53,6 +54,10 @@ class _HealthInfoPageState extends State<HealthInfoPage>
                 label: 'CREATE ACCOUNT',
                 onPressed: () {
                   // move to health tab
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BottomNavBar()),
+                  );
                 },
               ),
             ],
