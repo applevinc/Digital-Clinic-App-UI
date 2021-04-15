@@ -16,7 +16,7 @@ class OnboardingPage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
 
-      // when at last pageview, show an empty appbar
+      // when at pageview, show an appbar with skip button
       appBar: pageViewModel.currentIndex != onboardingData.length - 1
           ? AppBar(
               elevation: 0.0,
@@ -45,6 +45,8 @@ class OnboardingPage extends StatelessWidget {
                 ),
               ],
             )
+
+          // when at last pageview, show an empty appbar
           : AppBar(
               elevation: 0.0,
               backgroundColor: Colors.transparent,
@@ -69,16 +71,18 @@ class _Body extends StatelessWidget {
             constraints: BoxConstraints(
               minHeight: viewportConstraints.maxHeight,
             ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                PageViewBody(),
-                OnboardingIndicator(),
-                SizedBox(height: 6.2.h),
-                OnboardingButton(),
-                SizedBox(height: 3.1.h),
-                SocialLoginsOption(),
-              ],
+            child: IntrinsicHeight(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  PageViewBody(),
+                  OnboardingIndicator(),
+                  Spacer(),
+                  OnboardingButton(),
+                  Spacer(),
+                  SocialLoginsOption(),
+                ],
+              ),
             ),
           ),
         );

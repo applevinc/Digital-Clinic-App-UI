@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          CustomSearchBar(),
+          CustomSearchBar(hintText: 'Search Doctors, Clinics...'),
           _Body(),
         ],
       ),

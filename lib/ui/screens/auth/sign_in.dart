@@ -53,20 +53,22 @@ class _Body extends StatelessWidget {
         SizedBox(height: 11.0.h),
         Image.asset(Images.logo),
         SizedBox(height: 6.2.h),
-        Container(
-          padding: EdgeInsets.all(20),
-          margin: EdgeInsets.only(bottom: 20),
-          width: 91.0.w,
-          color: Colors.white,
-          child: Column(
-            children: [
-              AuthHeadingText('Sign In'),
-              AuthSubHeadLine('Please enter your credentials to proceed'),
-              SizedBox(height: 3.0.h),
-              SignInForm(),
-              SizedBox(height: 3.0.h),
-              SocialLoginsOption(),
-            ],
+        Flexible(
+          child: Container(
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.only(bottom: 20),
+            width: 91.0.w,
+            color: Colors.white,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                AuthHeadingText('Sign In'),
+                AuthSubHeadLine('Please enter your credentials to proceed'),
+                SizedBox(height: 3.0.h),
+                SignInForm(),
+                SocialLoginsOption(),
+              ],
+            ),
           ),
         )
       ],

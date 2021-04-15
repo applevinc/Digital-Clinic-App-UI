@@ -5,7 +5,10 @@ import 'package:sizer/sizer.dart';
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({
     Key key,
+    this.hintText,
   }) : super(key: key);
+
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,7 @@ class CustomSearchBar extends StatelessWidget {
         decoration: InputDecoration(
           filled: true,
           fillColor: Colors.white.withOpacity(0.2),
-          hintText: 'Search Doctors, Clinics...',
+          hintText: hintText,
           hintStyle: TextStyle(
             color: Colors.white,
           ),

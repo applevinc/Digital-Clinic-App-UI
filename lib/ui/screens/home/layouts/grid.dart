@@ -1,5 +1,6 @@
 import 'package:digital_clinic/ui/images.dart';
 import 'package:digital_clinic/ui/screens/clinics/clinics.dart';
+import 'package:digital_clinic/ui/screens/related_articles/related_articles.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -123,6 +124,6 @@ List<GridItem> gridItem = <GridItem>[
   GridItem(
     title: 'Related Articles',
     iconPath: Images.articles,
-    page: ClinicsPage(),
+    page: RelatedArticlesPage(),
   ),
 ];

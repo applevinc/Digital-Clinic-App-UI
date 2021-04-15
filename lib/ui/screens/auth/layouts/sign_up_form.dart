@@ -1,7 +1,6 @@
 import 'package:digital_clinic/ui/screens/auth/widgets/custom_textformfield.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:digital_clinic/ui/widgets/button.dart';
-import 'package:sizer/sizer.dart';
 import 'package:flutter/material.dart';
 
 class SignUpForm extends StatefulWidget {
@@ -33,7 +32,6 @@ class _SignUpFormState extends State<SignUpForm> {
             ),
             onPressed: () {},
           ),
-          SizedBox(height: 5.0.h),
           CustomButton(
             label: 'SIGN UP',
             backgroundColor: CustomColors.moodyBlue,

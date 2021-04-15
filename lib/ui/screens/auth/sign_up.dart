@@ -64,7 +64,6 @@ class _Body extends StatelessWidget {
               AuthSubHeadLine('Please enter your credentials to proceed'),
               SizedBox(height: 3.0.h),
               SignUpForm(),
-              SizedBox(height: 3.0.h),
               SocialLoginsOption(),
             ],
           ),

@@ -30,11 +30,11 @@ class _PageViewBodyState extends State<PageViewBody> {
             Column(
               children: [
                 _Image(imgPath: viewData.img),
-                SizedBox(height: 5.0.h),
-                _Title(value: viewData.title),
-                SizedBox(height: 2.0.h),
-                _Description(value: viewData.description),
                 Spacer(),
+                _Title(value: viewData.title),
+                Spacer(),
+                _Description(value: viewData.description),
+                Spacer(flex: 2),
               ],
             ),
         ],

@@ -17,6 +17,7 @@ class SocialLoginsOption extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 3.1.h),
+        //Spacer(),
         _SocialLogins(),
         SizedBox(height: 3.1.h),
       ],
