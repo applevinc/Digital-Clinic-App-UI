@@ -6,5 +6,5 @@ class CustomColors {
   static Color backgroundColor = Color(0xffF4F4FC);
   static Color whiteBackgroundColor = Colors.white;
   static Color grey = Colors.grey[400];
-  static Color lightText = Colors.black.withOpacity(0.3);
+  static Color lightText = Colors.black.withOpacity(0.5);
 }

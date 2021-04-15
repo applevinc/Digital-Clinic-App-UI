@@ -1,9 +1,10 @@
-import 'package:digital_clinic/ui/screens/onboarding/onboarding.dart';
 import 'package:digital_clinic/ui/screens/onboarding/viewmodel/pageview.dart';
 import 'package:digital_clinic/ui/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
+
+import 'screens/bottom_navigation_bar/bottom_navigation_bar.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -20,7 +21,10 @@ class MyApp extends StatelessWidget {
             providers: [
               ChangeNotifierProvider(create: (context) => OnboardingViewModel()),
             ],
-            child: OnboardingPage(),
+            // initial root
+            //child: OnboardingPage(),
+
+            child: BottomNavBar(),
           ),
         );
       });

@@ -1,6 +1,8 @@
 import 'package:digital_clinic/ui/screens/related_articles/layouts/hashtags_listview.dart';
-import 'package:digital_clinic/ui/screens/related_articles/layouts/stories_listview.dart';
+import 'package:digital_clinic/ui/screens/related_articles/layouts/stories_horizontal_listview.dart';
+import 'package:digital_clinic/ui/screens/related_articles/layouts/stories_vertical_listview.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
+import 'package:digital_clinic/ui/theme/theme.dart';
 import 'package:digital_clinic/ui/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -28,7 +30,13 @@ class RelatedArticlesPage extends StatelessWidget {
       body: Column(
         children: [
           CustomSearchBar(hintText: 'Search Articles'),
-          _Body(),
+          Flexible(
+            child: ListView(
+              children: [
+                _Body(),
+              ],
+            ),
+          ),
         ],
       ),
     );
@@ -44,7 +52,8 @@ class _Body extends StatelessWidget {
         // Hot themes
         _HeadLine1(),
         HashtagsListView(),
-        StoriesListView(),
+        StoriesHorizontalListView(),
+        StoriesVerticalListView(),
       ],
     );
   }
@@ -64,10 +73,11 @@ class _HeadLine1 extends StatelessWidget {
         children: [
           Text(
             'Hot Themes',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 12.0.sp,
-            ),
+            style: CustomTheme.lightTheme.textTheme.headline1,
+            // style: TextStyle(
+            //   fontWeight: FontWeight.bold,
+            //   fontSize: 12.0.sp,
+            // ),
           ),
           Text(
             'See All',

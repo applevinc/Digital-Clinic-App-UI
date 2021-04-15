@@ -15,7 +15,7 @@ class BuildGridView extends StatelessWidget {
           maxCrossAxisExtent: 200,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
-          childAspectRatio: 1.3,
+          childAspectRatio: 1.1,
         ),
         itemCount: gridItem.length,
         itemBuilder: (context, index) {

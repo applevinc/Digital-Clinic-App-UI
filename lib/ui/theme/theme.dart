@@ -1,5 +1,6 @@
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class CustomTheme {
   static ThemeData get lightTheme {
@@ -14,6 +15,13 @@ class CustomTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(primary: Colors.white),
+      ),
+      textTheme: TextTheme(
+        headline1: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+          fontSize: 12.0.sp,
+        ),
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
