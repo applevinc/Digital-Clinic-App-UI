@@ -1,4 +1,4 @@
-import 'package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/enter_address.dart';
+import 'package:digital_clinic/ui/widgets/input_mutiline_textfield.dart';
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/components/input_field.dart';
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart';
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/select_user_type.dart';
@@ -68,7 +68,10 @@ class _PersonalInfoTabState extends State<PersonalInfoTab>
                 hintText: 'Enter your city',
               ),
               SizedBox(height: 15),
-              Address(),
+              InputMultiLineTextField(
+                label: 'ADDRESS',
+                hintText: 'Enter your address',
+              ),
               SizedBox(height: 15),
               InputField(
                 label: 'EMERGENCY NUMBER',

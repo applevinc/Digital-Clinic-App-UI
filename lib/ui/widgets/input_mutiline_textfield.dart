@@ -1,10 +1,15 @@
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
 
-class Address extends StatelessWidget {
-  const Address({
+class InputMultiLineTextField extends StatelessWidget {
+  const InputMultiLineTextField({
     Key key,
+    @required this.label,
+    this.hintText,
   }) : super(key: key);
+
+  final String label;
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +17,7 @@ class Address extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Address',
+          label,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 5),
@@ -22,7 +27,7 @@ class Address extends StatelessWidget {
           decoration: InputDecoration(
             filled: true,
             fillColor: CustomColors.backgroundColor,
-            hintText: 'Enter your address',
+            hintText: hintText,
             hintStyle: TextStyle(
               color: Colors.grey,
             ),

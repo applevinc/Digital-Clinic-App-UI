@@ -1,4 +1,5 @@
 import 'package:digital_clinic/ui/images.dart';
+import 'package:digital_clinic/ui/screens/emergency/emergency.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -12,7 +13,10 @@ class Emergency extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // go to emergency page
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => EmergencyPage()),
+        );
       },
       child: Container(
         padding: EdgeInsets.all(10),
