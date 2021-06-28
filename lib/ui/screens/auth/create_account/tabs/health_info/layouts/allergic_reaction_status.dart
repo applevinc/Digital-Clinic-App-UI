@@ -54,9 +54,9 @@ class AllergicReactionColorProvider extends ChangeNotifier {
   bool isYes = false;
   bool isNo = false;
 
-  Color _yesContainerBackgroundColor = CustomColors.backgroundColor;
+  Color _yesContainerBackgroundColor = AppColors.backgroundColor;
   Color _yesContainerBorderColor = Colors.grey[300];
-  Color _noContainerBackgroundColor = CustomColors.backgroundColor;
+  Color _noContainerBackgroundColor = AppColors.backgroundColor;
   Color _noContainerBorderColor = Colors.grey[300];
 
   Color get yesContainerBackgroundColor => _yesContainerBackgroundColor;
@@ -67,8 +67,8 @@ class AllergicReactionColorProvider extends ChangeNotifier {
   void selectYes() {
     _unSelectNo();
     isYes = true;
-    _yesContainerBackgroundColor = CustomColors.lightMoodyBlue;
-    _yesContainerBorderColor = CustomColors.moodyBlue;
+    _yesContainerBackgroundColor = AppColors.lightMoodyBlue;
+    _yesContainerBorderColor = AppColors.moodyBlue;
 
     notifyListeners();
   }
@@ -76,13 +76,13 @@ class AllergicReactionColorProvider extends ChangeNotifier {
   void selectNo() {
     _unSelectYes();
     isNo = true;
-    _noContainerBackgroundColor = CustomColors.lightMoodyBlue;
-    _noContainerBorderColor = CustomColors.moodyBlue;
+    _noContainerBackgroundColor = AppColors.lightMoodyBlue;
+    _noContainerBorderColor = AppColors.moodyBlue;
   }
 
   void _unSelectYes() {
     isYes = false;
-    _yesContainerBackgroundColor = CustomColors.backgroundColor;
+    _yesContainerBackgroundColor = AppColors.backgroundColor;
     _yesContainerBorderColor = Colors.grey[300];
 
     notifyListeners();
@@ -90,7 +90,7 @@ class AllergicReactionColorProvider extends ChangeNotifier {
 
   void _unSelectNo() {
     isNo = false;
-    _noContainerBackgroundColor = CustomColors.backgroundColor;
+    _noContainerBackgroundColor = AppColors.backgroundColor;
     _noContainerBorderColor = Colors.grey[300];
 
     notifyListeners();

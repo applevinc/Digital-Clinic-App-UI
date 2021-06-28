@@ -23,9 +23,9 @@ class SignUpPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     alignment: Alignment.topCenter,
-                    image: AssetImage(Images.onboarding2),
+                    image: AssetImage(AppImages.onboarding2),
                     colorFilter: ColorFilter.mode(
-                      CustomColors.moodyBlue.withOpacity(1.0),
+                      AppColors.moodyBlue.withOpacity(1.0),
                       BlendMode.hardLight,
                     ),
                   ),
@@ -51,18 +51,18 @@ class _Body extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         SizedBox(height: 11.0.h),
-        Image.asset(Images.logo),
+        Image.asset(AppImages.logo),
         SizedBox(height: 6.2.h),
         Container(
           padding: EdgeInsets.all(20),
-          margin: EdgeInsets.only(bottom: 20),
-          width: 91.0.w,
+          margin: EdgeInsets.only(bottom: 20, right: 20, left: 20),
+          width: 100.0.w,
           color: Colors.white,
           child: Column(
             children: [
               AuthHeadingText('Sign Up'),
               AuthSubHeadLine('Please enter your credentials to proceed'),
-              SizedBox(height: 3.0.h),
+              SizedBox(height: 20),
               SignUpForm(),
               SocialLoginsOption(),
             ],

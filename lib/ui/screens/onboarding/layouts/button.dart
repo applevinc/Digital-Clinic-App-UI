@@ -11,26 +11,25 @@ class OnboardingButton extends StatelessWidget {
   Widget build(BuildContext context) {
     var pageViewModel = context.watch<OnboardingViewModel>();
 
-    return SizedBox(
-      width: 82.0.w,
-      child: pageViewModel.currentIndex != onboardingData.length - 1
-          ? CustomButton(
-              label: 'NEXT',
-              onPressed: () {
-                pageViewModel.next();
-              },
-            )
-          : CustomButton(
-              label: 'LETS \' START',
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => SignInPage(),
-                  ),
-                );
-              },
-            ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: SizedBox(
+        width: 100.0.w,
+        child: pageViewModel.currentIndex != onboardingData.length - 1
+            ? CustomButton(
+                label: 'NEXT',
+                onPressed: () {
+                  pageViewModel.next();
+                },
+              )
+            : CustomButton(
+                label: 'LETS \' START',
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => SignInPage()));
+                },
+              ),
+      ),
     );
   }
 }

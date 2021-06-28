@@ -5,7 +5,6 @@ import 'package:digital_clinic/ui/screens/onboarding/layouts/pageview_body.dart'
 import 'package:digital_clinic/ui/screens/onboarding/viewmodel/pageview.dart';
 import 'package:digital_clinic/ui/screens/auth/widgets/social_login_option.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 import 'package:provider/provider.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -21,7 +20,7 @@ class OnboardingPage extends StatelessWidget {
           ? AppBar(
               elevation: 0.0,
               backgroundColor: Colors.transparent,
-              toolbarHeight: 10.0.h,
+              toolbarHeight: 70,
               actions: [
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
@@ -37,7 +36,7 @@ class OnboardingPage extends StatelessWidget {
                       'SKIP',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 10.0.sp,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -50,7 +49,7 @@ class OnboardingPage extends StatelessWidget {
           : AppBar(
               elevation: 0.0,
               backgroundColor: Colors.transparent,
-              toolbarHeight: 10.0.h,
+              toolbarHeight: 70,
             ),
       body: _Body(),
     );

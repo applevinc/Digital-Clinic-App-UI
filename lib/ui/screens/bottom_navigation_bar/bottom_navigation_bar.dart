@@ -34,8 +34,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
-        selectedItemColor: CustomColors.moodyBlue,
-        unselectedItemColor: CustomColors.grey,
+        selectedItemColor: AppColors.moodyBlue,
+        unselectedItemColor: AppColors.grey,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,

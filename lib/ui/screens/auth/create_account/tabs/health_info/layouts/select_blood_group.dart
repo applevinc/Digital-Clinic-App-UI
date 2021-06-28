@@ -35,7 +35,7 @@ class _BloodGroupDropdown extends StatelessWidget {
         horizontal: 20,
       ),
       decoration: BoxDecoration(
-        color: CustomColors.backgroundColor,
+        color: AppColors.backgroundColor,
         borderRadius: BorderRadius.circular(5),
         border: Border.all(color: Colors.grey[300]),
       ),

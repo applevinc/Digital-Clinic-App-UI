@@ -1,9 +1,6 @@
-import 'package:digital_clinic/ui/images.dart';
 import 'package:digital_clinic/ui/screens/emergency/layouts/featured_image.dart';
 import 'package:digital_clinic/ui/screens/emergency/layouts/form.dart';
-import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 class EmergencyPage extends StatelessWidget {
   @override

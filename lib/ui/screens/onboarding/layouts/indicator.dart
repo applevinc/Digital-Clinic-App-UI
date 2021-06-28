@@ -32,8 +32,8 @@ class OnboardingIndicator extends StatelessWidget {
         width: 10.6.w,
         decoration: BoxDecoration(
           color: currentIndex == pageNo
-              ? CustomColors.moodyBlue
-              : CustomColors.lightMoodyBlue.withOpacity(0.3),
+              ? AppColors.moodyBlue
+              : AppColors.lightMoodyBlue.withOpacity(0.3),
         ),
       ),
     );

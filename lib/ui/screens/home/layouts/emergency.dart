@@ -33,7 +33,7 @@ class Emergency extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.asset(
-                Images.emergency,
+                AppImages.emergency,
                 // height: 10,
                 // width: 10,
               ),
@@ -45,15 +45,15 @@ class Emergency extends StatelessWidget {
                 Text(
                   'Emergency',
                   style: TextStyle(
-                    fontSize: 12.0.sp,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
                   'Short Description',
                   style: TextStyle(
-                    fontSize: 10.0.sp,
-                    color: CustomColors.grey,
+                    fontSize: 14,
+                    color: AppColors.grey,
                   ),
                 ),
               ],
@@ -61,7 +61,7 @@ class Emergency extends StatelessWidget {
             Spacer(),
             Icon(
               Icons.arrow_forward_ios_sharp,
-              color: CustomColors.moodyBlue,
+              color: AppColors.moodyBlue,
               size: 13.0.sp,
             )
           ],

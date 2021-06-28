@@ -1,4 +1,5 @@
 import 'package:digital_clinic/ui/images.dart';
+import 'package:digital_clinic/ui/screens/article/article.dart';
 import 'package:digital_clinic/ui/screens/related_articles/widgets/likes.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -8,15 +9,14 @@ class StoriesHorizontalListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 10),
-      child: Container(
-        height: 45.0.h,
-        child: ListView(
+      child: SizedBox(
+        height: 310,
+        child: ListView.builder(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           scrollDirection: Axis.horizontal,
-          children: [
-            _StoryItem(),
-            _StoryItem(),
-          ],
+          physics: BouncingScrollPhysics(),
+          itemCount: 5,
+          itemBuilder: (BuildContext context, int index) => _StoryItem(),
         ),
       ),
     );
@@ -30,21 +30,26 @@ class _StoryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(5),
-        ),
-        width: 80.0.w,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _StoryItemImageStack(),
-            Spacer(),
-            _StoryItemMeta(),
-          ],
+    return InkWell(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ArticlePage()));
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(5),
+          ),
+          width: 80.0.w,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _StoryItemImageStack(),
+              Spacer(),
+              _StoryItemMeta(),
+            ],
+          ),
         ),
       ),
     );
@@ -69,7 +74,7 @@ class _StoryItemImageStack extends StatelessWidget {
               topRight: Radius.circular(5),
             ),
             image: DecorationImage(
-              image: AssetImage(Images.onboarding1),
+              image: AssetImage(AppImages.onboarding1),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                 Colors.black26,
@@ -118,7 +123,7 @@ class _StoryItemMeta extends StatelessWidget {
           Text(
             'Far far away, behind the word mountains',
             style: TextStyle(
-              fontSize: 12.0.sp,
+              fontSize: 15,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -126,7 +131,7 @@ class _StoryItemMeta extends StatelessWidget {
             '2 hours ago',
             style: TextStyle(
               color: Colors.grey,
-              fontSize: 9.0.sp,
+              fontSize: 13,
             ),
           ),
           SizedBox(height: 10),
@@ -167,5 +172,3 @@ class _Share extends StatelessWidget {
     );
   }
 }
-
-

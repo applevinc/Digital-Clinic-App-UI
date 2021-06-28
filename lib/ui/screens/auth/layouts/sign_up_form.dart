@@ -34,7 +34,7 @@ class _SignUpFormState extends State<SignUpForm> {
           ),
           CustomButton(
             label: 'SIGN UP',
-            backgroundColor: CustomColors.moodyBlue,
+            backgroundColor: AppColors.moodyBlue,
             onPressed: () {
               // Validate returns true if the form is valid, otherwise false.
               if (_formKey.currentState.validate()) {

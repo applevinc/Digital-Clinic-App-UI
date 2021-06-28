@@ -14,22 +14,22 @@ class PageViewModel {
 
 final onboardingData = [
   PageViewModel(
-      img: Images.onboarding1,
+      img: AppImages.onboarding1,
       title: 'Welcome to Digital Clinic',
       description:
           'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'),
   PageViewModel(
-      img: Images.onboarding2,
+      img: AppImages.onboarding2,
       title: 'Ask a doctor online',
       description:
           'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'),
   PageViewModel(
-      img: Images.onboarding3,
+      img: AppImages.onboarding3,
       title: 'Physician on your doorstep',
       description:
           'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'),
   PageViewModel(
-      img: Images.onboarding4,
+      img: AppImages.onboarding4,
       title: 'Keep your health tests in one place',
       description:
           'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.')

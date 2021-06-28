@@ -1,6 +1,5 @@
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 class HashtagsListView extends StatelessWidget {
   const HashtagsListView({
@@ -9,12 +8,13 @@ class HashtagsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 10.0.h,
+    return SizedBox(
+      height: 60,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: hashTags.length,
-        padding: EdgeInsets.all(10),
+        physics: BouncingScrollPhysics(),
+        padding: EdgeInsets.symmetric(horizontal: 20),
         itemBuilder: (context, index) {
           return _HashTagItem(index);
         },
@@ -31,19 +31,20 @@ class _HashTagItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Container(
         padding: EdgeInsets.all(10),
+        margin: EdgeInsets.only(right: 10),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: CustomColors.moodyBlue.withOpacity(0.3),
+          color: AppColors.moodyBlue.withOpacity(0.3),
           borderRadius: BorderRadius.circular(5),
-          border: Border.all(color: CustomColors.moodyBlue),
+          border: Border.all(color: AppColors.moodyBlue),
         ),
         child: Text(
           hashTags[index],
           style: TextStyle(
-            color: CustomColors.moodyBlue,
+            color: AppColors.moodyBlue,
             fontWeight: FontWeight.bold,
           ),
         ),

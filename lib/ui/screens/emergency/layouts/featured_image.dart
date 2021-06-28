@@ -16,10 +16,10 @@ class FeaturedImage extends StatelessWidget {
       alignment: Alignment.bottomLeft,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(Images.emergencyBus),
+          image: AssetImage(AppImages.emergencyBus),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-            CustomColors.moodyBlue.withOpacity(1.0),
+            AppColors.moodyBlue.withOpacity(1.0),
             BlendMode.hardLight,
           ),
         ),

@@ -3,25 +3,24 @@ import 'package:digital_clinic/ui/screens/clinics/clinics.dart';
 import 'package:digital_clinic/ui/screens/related_articles/related_articles.dart';
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 class BuildGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: GridView.builder(
-        padding: EdgeInsets.only(bottom: 20),
-        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-          childAspectRatio: 1.1,
-        ),
-        itemCount: gridItem.length,
-        itemBuilder: (context, index) {
-          return _GridItemContainer(index);
-        },
+    return GridView.builder(
+      padding: EdgeInsets.only(bottom: 20),
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+        maxCrossAxisExtent: 200,
+        crossAxisSpacing: 20,
+        mainAxisSpacing: 20,
+        childAspectRatio: 1.5,
       ),
+      itemCount: gridItem.length,
+      itemBuilder: (context, index) {
+        return _GridItemContainer(index);
+      },
     );
   }
 }
@@ -52,28 +51,21 @@ class _GridItemContainer extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
-                color: CustomColors.lightMoodyBlue,
+                color: AppColors.lightMoodyBlue,
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Image.asset(
                 gridItem[index].iconPath,
-                height: 7.5.h,
-                width: 8.5.w,
+                height: 50,
+                width: 35,
               ),
             ),
             Spacer(),
             Text(
               gridItem[index].title,
               style: TextStyle(
-                fontSize: 12.0.sp,
+                fontSize: 15,
                 fontWeight: FontWeight.bold,
-              ),
-            ),
-            Text(
-              'Short Description',
-              style: TextStyle(
-                fontSize: 10.0.sp,
-                color: CustomColors.grey,
               ),
             ),
           ],
@@ -98,32 +90,32 @@ class GridItem {
 List<GridItem> gridItem = <GridItem>[
   GridItem(
     title: 'Doctors',
-    iconPath: Images.doctor,
+    iconPath: AppImages.doctor,
     page: ClinicsPage(),
   ),
   GridItem(
     title: 'Clinics',
-    iconPath: Images.clinic,
+    iconPath: AppImages.clinic,
     page: ClinicsPage(),
   ),
   GridItem(
     title: 'Specialities',
-    iconPath: Images.speciality,
+    iconPath: AppImages.speciality,
     page: ClinicsPage(),
   ),
   GridItem(
     title: 'Labs',
-    iconPath: Images.lab,
+    iconPath: AppImages.lab,
     page: ClinicsPage(),
   ),
   GridItem(
     title: 'Insurance',
-    iconPath: Images.insurance,
+    iconPath: AppImages.insurance,
     page: ClinicsPage(),
   ),
   GridItem(
     title: 'Related Articles',
-    iconPath: Images.articles,
+    iconPath: AppImages.articles,
     page: RelatedArticlesPage(),
   ),
 ];

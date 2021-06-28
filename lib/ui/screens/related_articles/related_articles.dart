@@ -17,47 +17,42 @@ class RelatedArticlesPage extends StatelessWidget {
           'Related Articles',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 17.0.sp,
+            fontSize: 20,
           ),
         ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: Icon(Icons.filter_alt_rounded),
-          ),
-        ],
       ),
-      body: Column(
-        children: [
-          CustomSearchBar(hintText: 'Search Articles'),
-          Flexible(
-            child: ListView(
-              children: [
-                _Body(),
-              ],
-            ),
-          ),
-        ],
-      ),
+      body: _Body(),
     );
   }
 }
 
 class _Body extends StatelessWidget {
+  const _Body({
+    Key key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
       children: [
-        // Hot themes
-        _HeadLine1(),
-        HashtagsListView(),
-        StoriesHorizontalListView(),
-        StoriesVerticalListView(),
+        CustomSearchBar(hintText: 'Search Articles'),
+        Flexible(
+          child: ListView(
+            physics: BouncingScrollPhysics(),
+            children: [
+              _HeadLine1(),
+              HashtagsListView(),
+              StoriesHorizontalListView(),
+              StoriesVerticalListView(),
+            ],
+          ),
+        ),
       ],
     );
   }
 }
+
+
 
 class _HeadLine1 extends StatelessWidget {
   const _HeadLine1({
@@ -74,15 +69,11 @@ class _HeadLine1 extends StatelessWidget {
           Text(
             'Hot Themes',
             style: CustomTheme.lightTheme.textTheme.headline1,
-            // style: TextStyle(
-            //   fontWeight: FontWeight.bold,
-            //   fontSize: 12.0.sp,
-            // ),
           ),
           Text(
             'See All',
             style: TextStyle(
-              color: CustomColors.lightText,
+              color: AppColors.lightText,
               fontSize: 10.0.sp,
               fontWeight: FontWeight.w700,
             ),

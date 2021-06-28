@@ -1,13 +1,14 @@
+import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({
+  CustomButton({
     Key key,
     this.label,
     this.onPressed,
-    this.backgroundColor,
-    this.labelColor,
+    this.backgroundColor = AppColors.moodyBlue,
+    this.labelColor = Colors.white,
   }) : super(key: key);
 
   final String label;
@@ -26,7 +27,7 @@ class CustomButton extends StatelessWidget {
         ),
         onPressed: onPressed,
         child: Text(
-          label,
+          label.toUpperCase(),
           style: TextStyle(
             color: labelColor,
             fontWeight: FontWeight.bold,

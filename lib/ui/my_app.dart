@@ -1,3 +1,5 @@
+import 'package:digital_clinic/ui/screens/doctor_list/doctor_list.dart';
+import 'package:digital_clinic/ui/screens/onboarding/onboarding.dart';
 import 'package:digital_clinic/ui/screens/onboarding/viewmodel/pageview.dart';
 import 'package:digital_clinic/ui/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -22,9 +24,9 @@ class MyApp extends StatelessWidget {
               ChangeNotifierProvider(create: (context) => OnboardingViewModel()),
             ],
             // initial root
-            //child: OnboardingPage(),
+            child: OnboardingPage(),
 
-            child: BottomNavBar(),
+            //child: DoctorListPage(),
           ),
         );
       });

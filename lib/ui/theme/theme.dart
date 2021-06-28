@@ -5,13 +5,13 @@ import 'package:sizer/sizer.dart';
 class CustomTheme {
   static ThemeData get lightTheme {
     return ThemeData(
-      primaryColor: CustomColors.moodyBlue,
-      accentColor: CustomColors.moodyBlue,
-      scaffoldBackgroundColor: CustomColors.backgroundColor,
+      primaryColor: AppColors.moodyBlue,
+      accentColor: AppColors.moodyBlue,
+      scaffoldBackgroundColor: AppColors.backgroundColor,
       fontFamily: 'Open Sans',
       buttonTheme: ButtonThemeData(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0)),
-        buttonColor: CustomColors.moodyBlue,
+        buttonColor: AppColors.moodyBlue,
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(primary: Colors.white),
@@ -25,22 +25,22 @@ class CustomTheme {
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          primary: CustomColors.moodyBlue,
+          primary: AppColors.moodyBlue,
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          primary: CustomColors.moodyBlue,
+          primary: AppColors.moodyBlue,
           shadowColor: Colors.white,
           elevation: 0.0,
           side: BorderSide(
-            color: CustomColors.moodyBlue,
+            color: AppColors.moodyBlue,
             width: 1.0,
           ),
         ),
       ),
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: CustomColors.moodyBlue,
+        backgroundColor: AppColors.moodyBlue,
       ),
       appBarTheme: AppBarTheme(
         brightness: Brightness.dark,

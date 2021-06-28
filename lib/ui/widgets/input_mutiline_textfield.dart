@@ -26,7 +26,7 @@ class InputMultiLineTextField extends StatelessWidget {
           maxLines: null,
           decoration: InputDecoration(
             filled: true,
-            fillColor: CustomColors.backgroundColor,
+            fillColor: AppColors.backgroundColor,
             hintText: hintText,
             hintStyle: TextStyle(
               color: Colors.grey,
@@ -38,13 +38,13 @@ class InputMultiLineTextField extends StatelessWidget {
             border: InputBorder.none,
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: CustomColors.moodyBlue.withOpacity(0.2),
+                color: AppColors.moodyBlue.withOpacity(0.2),
                 width: 1.0,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: CustomColors.moodyBlue.withOpacity(0.2),
+                color: AppColors.moodyBlue.withOpacity(0.2),
                 width: 1.0,
               ),
             ),

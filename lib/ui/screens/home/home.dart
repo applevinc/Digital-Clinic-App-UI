@@ -2,7 +2,7 @@ import 'package:digital_clinic/ui/screens/home/layouts/emergency.dart';
 import 'package:digital_clinic/ui/screens/home/layouts/grid.dart';
 import 'package:digital_clinic/ui/widgets/search_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
+import 'package:flutter/rendering.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -15,11 +15,12 @@ class HomePage extends StatelessWidget {
           'Home Page',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 17.0.sp,
+            fontSize: 20,
           ),
         ),
       ),
       body: Column(
+        mainAxisSize: MainAxisSize.max,
         children: [
           CustomSearchBar(hintText: 'Search Doctors, Clinics...'),
           _Body(),
@@ -36,17 +37,15 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: Padding(
-        padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
-        child: Column(
-          children: [
-            Emergency(),
-            SizedBox(height: 10),
-            BuildGridView(),
-          ],
-        ),
-      ),
+    return ListView(
+      shrinkWrap: true,
+      physics: BouncingScrollPhysics(),
+      padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
+      children: [
+        Emergency(),
+        SizedBox(height: 10),
+        BuildGridView(),
+      ],
     );
   }
 }

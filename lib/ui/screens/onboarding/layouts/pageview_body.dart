@@ -19,7 +19,7 @@ class _PageViewBodyState extends State<PageViewBody> {
   Widget build(BuildContext context) {
     var pageViewModel = context.watch<OnboardingViewModel>();
 
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: 72.4.h,
       child: PageView(
@@ -62,7 +62,7 @@ class _Description extends StatelessWidget {
         value,
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 11.0.sp,
+          fontSize: 14,
         ),
       ),
     );
@@ -85,7 +85,7 @@ class _Title extends StatelessWidget {
         value,
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 20.0.sp,
+          fontSize: 25,
           fontWeight: FontWeight.bold,
         ),
       ),
@@ -110,7 +110,7 @@ class _Image extends StatelessWidget {
           image: AssetImage(imgPath),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-            CustomColors.moodyBlue.withOpacity(1.0),
+            AppColors.moodyBlue.withOpacity(1.0),
             BlendMode.hardLight,
           ),
         ),

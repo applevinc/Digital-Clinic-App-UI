@@ -68,11 +68,11 @@ class GenderStatusProvider extends ChangeNotifier {
   bool isFemale = false;
   bool isOther = false;
 
-  Color _maleBackgroundColor = CustomColors.backgroundColor;
+  Color _maleBackgroundColor = AppColors.backgroundColor;
   Color _maleBorderColor = Colors.grey[300];
-  Color _femaleBackgroundColor = CustomColors.backgroundColor;
+  Color _femaleBackgroundColor = AppColors.backgroundColor;
   Color _femaleBorderColor = Colors.grey[300];
-  Color _otherBackgroundColor = CustomColors.backgroundColor;
+  Color _otherBackgroundColor = AppColors.backgroundColor;
   Color _otherBorderColor = Colors.grey[300];
 
   Color get yesContainerBackgroundColor => _maleBackgroundColor;
@@ -86,8 +86,8 @@ class GenderStatusProvider extends ChangeNotifier {
     _unSelectFemale();
     _unSelectOther();
     isMale = true;
-    _maleBackgroundColor = CustomColors.lightMoodyBlue;
-    _maleBorderColor = CustomColors.moodyBlue;
+    _maleBackgroundColor = AppColors.lightMoodyBlue;
+    _maleBorderColor = AppColors.moodyBlue;
 
     notifyListeners();
   }
@@ -96,21 +96,21 @@ class GenderStatusProvider extends ChangeNotifier {
     _unSelectMale();
     _unSelectOther();
     isFemale = true;
-    _femaleBackgroundColor = CustomColors.lightMoodyBlue;
-    _femaleBorderColor = CustomColors.moodyBlue;
+    _femaleBackgroundColor = AppColors.lightMoodyBlue;
+    _femaleBorderColor = AppColors.moodyBlue;
   }
 
   void selectOther() {
     _unSelectMale();
     _unSelectFemale();
     isOther = true;
-    _otherBackgroundColor = CustomColors.lightMoodyBlue;
-    _otherBorderColor = CustomColors.moodyBlue;
+    _otherBackgroundColor = AppColors.lightMoodyBlue;
+    _otherBorderColor = AppColors.moodyBlue;
   }
 
   void _unSelectMale() {
     isMale = false;
-    _maleBackgroundColor = CustomColors.backgroundColor;
+    _maleBackgroundColor = AppColors.backgroundColor;
     _maleBorderColor = Colors.grey[300];
 
     notifyListeners();
@@ -118,7 +118,7 @@ class GenderStatusProvider extends ChangeNotifier {
 
   void _unSelectFemale() {
     isFemale = false;
-    _femaleBackgroundColor = CustomColors.backgroundColor;
+    _femaleBackgroundColor = AppColors.backgroundColor;
     _femaleBorderColor = Colors.grey[300];
 
     notifyListeners();
@@ -126,7 +126,7 @@ class GenderStatusProvider extends ChangeNotifier {
 
   void _unSelectOther() {
     isOther = false;
-    _otherBackgroundColor = CustomColors.backgroundColor;
+    _otherBackgroundColor = AppColors.backgroundColor;
     _otherBorderColor = Colors.grey[300];
 
     notifyListeners();

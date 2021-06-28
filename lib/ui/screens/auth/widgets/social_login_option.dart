@@ -1,7 +1,6 @@
 import 'package:digital_clinic/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:sizer/sizer.dart';
 
 class SocialLoginsOption extends StatelessWidget {
   const SocialLoginsOption({
@@ -16,10 +15,9 @@ class SocialLoginsOption extends StatelessWidget {
           'OR CONNECT USING',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 3.1.h),
-        //Spacer(),
+        SizedBox(height: 20),
         _SocialLogins(),
-        SizedBox(height: 3.1.h),
+        SizedBox(height: 20),
       ],
     );
   }
@@ -58,13 +56,13 @@ class _SocialItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
-          color: CustomColors.backgroundColor.withOpacity(0.3),
+          color: AppColors.backgroundColor.withOpacity(0.3),
           shape: BoxShape.circle,
-          border: Border.all(color: CustomColors.moodyBlue)),
+          border: Border.all(color: AppColors.moodyBlue)),
       child: Icon(
         icon,
-        color: CustomColors.moodyBlue,
-        size: 17.0.sp,
+        color: AppColors.moodyBlue,
+        size: 20,
       ),
     );
   }

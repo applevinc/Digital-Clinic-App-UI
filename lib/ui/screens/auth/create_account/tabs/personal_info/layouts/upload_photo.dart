@@ -16,13 +16,13 @@ class UploadPhoto extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             //color: CustomColors.backgroundColor,
-            color: CustomColors.backgroundColor,
+            color: AppColors.backgroundColor,
           ),
           child: Icon(Icons.upload_file),
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: CustomColors.backgroundColor,
+            primary: AppColors.backgroundColor,
             elevation: 0.0,
             side: BorderSide(
               color: Colors.grey[300],

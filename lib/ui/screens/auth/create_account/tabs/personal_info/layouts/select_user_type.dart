@@ -54,9 +54,9 @@ class SelectUserTypeColorProvider extends ChangeNotifier {
   bool isPatient = false;
   bool isDoctor = false;
 
-  Color _patientBackgroundColor = CustomColors.backgroundColor;
+  Color _patientBackgroundColor = AppColors.backgroundColor;
   Color _patientBorderColor = Colors.grey[300];
-  Color _doctorBackgroundColor = CustomColors.backgroundColor;
+  Color _doctorBackgroundColor = AppColors.backgroundColor;
   Color _doctorBorderColor = Colors.grey[300];
 
   Color get patientBackgroundColor => _patientBackgroundColor;
@@ -67,8 +67,8 @@ class SelectUserTypeColorProvider extends ChangeNotifier {
   void selectPatient() {
     _unSelectDoctor();
     isPatient = true;
-    _patientBackgroundColor = CustomColors.lightMoodyBlue;
-    _patientBorderColor = CustomColors.moodyBlue;
+    _patientBackgroundColor = AppColors.lightMoodyBlue;
+    _patientBorderColor = AppColors.moodyBlue;
 
     notifyListeners();
   }
@@ -76,13 +76,13 @@ class SelectUserTypeColorProvider extends ChangeNotifier {
   void selectDoctor() {
     _unSelectPatient();
     isDoctor = true;
-    _doctorBackgroundColor = CustomColors.lightMoodyBlue;
-    _doctorBorderColor = CustomColors.moodyBlue;
+    _doctorBackgroundColor = AppColors.lightMoodyBlue;
+    _doctorBorderColor = AppColors.moodyBlue;
   }
 
   void _unSelectPatient() {
     isPatient = false;
-    _patientBackgroundColor = CustomColors.backgroundColor;
+    _patientBackgroundColor = AppColors.backgroundColor;
     _patientBorderColor = Colors.grey[300];
 
     notifyListeners();
@@ -90,7 +90,7 @@ class SelectUserTypeColorProvider extends ChangeNotifier {
 
   void _unSelectDoctor() {
     isDoctor = false;
-    _doctorBackgroundColor = CustomColors.backgroundColor;
+    _doctorBackgroundColor = AppColors.backgroundColor;
     _doctorBorderColor = Colors.grey[300];
 
     notifyListeners();
