@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 class CustomButton extends StatelessWidget {
   CustomButton({
     Key key,
-    this.label,
+    @required this.label,
     this.onPressed,
     this.backgroundColor = AppColors.moodyBlue,
     this.labelColor = Colors.white,

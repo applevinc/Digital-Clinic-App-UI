@@ -11,6 +11,7 @@ class BookingPage extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           automaticallyImplyLeading: true,
           elevation: 0.0,
@@ -33,7 +34,7 @@ class BookingPage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            SelectTimePage(),
+            SelectTimeTab(),
             DetailsPage(),
             FinishPage(),
           ],

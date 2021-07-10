@@ -31,6 +31,7 @@ dependencies:
   sizer: ^1.1.8
   provider: ^5.0.0
   font_awesome_flutter: ^9.0.0
+  table_calendar: ^3.0.1
 
 dev_dependencies:
   flutter_test:
