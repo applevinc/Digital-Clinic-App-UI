@@ -23,7 +23,7 @@ class OptionContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(5),
       ),
       child: Text(
-        label,
+        label.toUpperCase(),
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
     );

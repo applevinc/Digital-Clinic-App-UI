@@ -1,9 +1,9 @@
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/components/input_field.dart';
-import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/current_illness_status.dart';
-import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/select_blood_group.dart';
 import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/allergic_reaction_status.dart';
+import 'package:digital_clinic/ui/screens/auth/create_account/tabs/health_info/layouts/select_blood_group.dart';
 import 'package:digital_clinic/ui/screens/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:digital_clinic/ui/widgets/button.dart';
+import 'package:digital_clinic/ui/widgets/select_option.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,8 +12,7 @@ class HealthInfoPage extends StatefulWidget {
   _HealthInfoPageState createState() => _HealthInfoPageState();
 }
 
-class _HealthInfoPageState extends State<HealthInfoPage>
-    with AutomaticKeepAliveClientMixin {
+class _HealthInfoPageState extends State<HealthInfoPage> with AutomaticKeepAliveClientMixin {
   @override
   bool get wantKeepAlive => true;
   @override
@@ -22,12 +21,8 @@ class _HealthInfoPageState extends State<HealthInfoPage>
 
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => AllergicReactionColorProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (context) => CurrentIlnessColorProvider(),
-        ),
+        ChangeNotifierProvider(create: (context) => AllergicReactionColorProvider()),
+        ChangeNotifierProvider(create: (context) => SelectOptionColorProvider()),
       ],
       child: SingleChildScrollView(
         child: Padding(
@@ -46,9 +41,11 @@ class _HealthInfoPageState extends State<HealthInfoPage>
               SizedBox(height: 15),
               SelectBloodGroup(),
               SizedBox(height: 15),
-              AllergicReactionStatus(),
-              SizedBox(height: 15),
-              CurrentIllnessStatus(),
+              SelectOption(
+                title: 'Allergic reaction',
+                option1: 'yes',
+                option2: 'No',
+              ),
               SizedBox(height: 15),
               CustomButton(
                 label: 'CREATE ACCOUNT',

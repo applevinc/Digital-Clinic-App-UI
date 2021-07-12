@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FinishPage extends StatelessWidget {
-  const FinishPage({ Key key }) : super(key: key);
+class FinishTab extends StatelessWidget {
+  const FinishTab({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
