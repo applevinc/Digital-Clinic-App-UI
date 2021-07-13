@@ -17,13 +17,13 @@ class _SelectTimeTabState extends State<SelectTimeTab> with AutomaticKeepAliveCl
   Widget build(BuildContext context) {
     super.build(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
       child: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
             CalendarWidget(),
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
@@ -34,15 +34,16 @@ class _SelectTimeTabState extends State<SelectTimeTab> with AutomaticKeepAliveCl
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             AvailableTimeWidget(),
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             CustomButton(
               label: 'Next',
               onPressed: () {
                 DefaultTabController.of(context).animateTo(1);
               },
             ),
+            SizedBox(height: 20),
           ],
         ),
       ),

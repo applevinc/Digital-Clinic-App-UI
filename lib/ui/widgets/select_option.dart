@@ -23,7 +23,7 @@ class SelectOption extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          title.toUpperCase(),
+          title,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 5),

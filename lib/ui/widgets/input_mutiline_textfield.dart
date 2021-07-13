@@ -32,7 +32,7 @@ class InputMultiLineTextField extends StatelessWidget {
               color: Colors.grey,
             ),
             contentPadding: new EdgeInsets.symmetric(
-              vertical: 5.0,
+              vertical: 20,
               horizontal: 20,
             ),
             border: InputBorder.none,
