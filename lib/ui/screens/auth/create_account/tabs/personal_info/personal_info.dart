@@ -25,6 +25,7 @@ class _PersonalInfoTabState extends State<PersonalInfoTab> with AutomaticKeepAli
         ChangeNotifierProvider(create: (context) => SelectOptionColorProvider()),
       ],
       child: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(

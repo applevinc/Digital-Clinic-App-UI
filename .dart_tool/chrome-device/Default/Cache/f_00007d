@@ -1,0 +1,351 @@
+define(['dart_sdk', 'packages/flutter/src/material/tab_controller.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/digital_clinic/ui/screens/auth/create_account/tabs/personal_info/personal_info.dart', 'packages/digital_clinic/ui/screens/auth/create_account/tabs/health_info/health_info.dart'], (function load__packages__digital_clinic__ui__screens__auth__create_account__create_account_dart(dart_sdk, packages__flutter__src__material__tab_controller$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__strut_style$46dart, packages__digital_clinic__ui__screens__auth__create_account__tabs__personal_info__personal_info$46dart, packages__digital_clinic__ui__screens__auth__create_account__tabs__health_info__health_info$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const tab_controller = packages__flutter__src__material__tab_controller$46dart.src__material__tab_controller;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const tabs = packages__flutter__src__material__icon_button$46dart.src__material__tabs;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const personal_info = packages__digital_clinic__ui__screens__auth__create_account__tabs__personal_info__personal_info$46dart.ui__screens__auth__create_account__tabs__personal_info__personal_info;
+  const health_info = packages__digital_clinic__ui__screens__auth__create_account__tabs__health_info__health_info$46dart.ui__screens__auth__create_account__tabs__health_info__health_info;
+  var create_account = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 13,
+        [_Location_line]: 14,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 13,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 19,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 19,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9], T._LocationL());
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "indicatorWeight",
+        [_Location_column]: 13,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "labelStyle",
+        [_Location_column]: 13,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tabs",
+        [_Location_column]: 13,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13, C[14] || CT.C14], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 17,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 11,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottom",
+        [_Location_column]: 11,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17, C[18] || CT.C18], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 12,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24], T._LocationL());
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 11,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 9,
+        [_Location_line]: 12,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 9,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27, C[28] || CT.C28, C[29] || CT.C29], T._LocationL());
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 10,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "length",
+        [_Location_column]: 7,
+        [_Location_line]: 9,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 10,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.constList([C[32] || CT.C32, C[33] || CT.C33], T._LocationL());
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[31] || CT.C31,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 8,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/create_account.dart"
+      });
+    }
+  }, false);
+  var C = Array(34).fill(void 0);
+  var I = ["package:digital_clinic/ui/screens/auth/create_account/create_account.dart"];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  create_account.CreateAccountPage = class CreateAccountPage extends framework.StatelessWidget {
+    build(context) {
+      return new tab_controller.DefaultTabController.new({length: 2, child: new scaffold.Scaffold.new({backgroundColor: colors.Colors.white, appBar: new app_bar.AppBar.new({title: new text.Text.new("Create Account", {style: new text_style.TextStyle.new({fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), bottom: new tabs.TabBar.new({indicatorWeight: 4.0, labelStyle: new text_style.TextStyle.new({fontWeight: ui.FontWeight.bold}), tabs: T.JSArrayOfWidgetL().of([new tabs.Tab.new({text: "1. PERSONAL INFO", $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new tabs.Tab.new({text: "2. HEALTH INFO", $creationLocationd_0dea112b090073317d4: C[7] || CT.C7})]), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), body: new tabs.TabBarView.new({children: T.JSArrayOfWidgetL().of([new personal_info.PersonalInfoTab.new({$creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), new health_info.HealthInfoPage.new({$creationLocationd_0dea112b090073317d4: C[21] || CT.C21})]), $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), $creationLocationd_0dea112b090073317d4: C[25] || CT.C25}), $creationLocationd_0dea112b090073317d4: C[30] || CT.C30});
+    }
+  };
+  (create_account.CreateAccountPage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    create_account.CreateAccountPage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = create_account.CreateAccountPage.prototype;
+  dart.addTypeTests(create_account.CreateAccountPage);
+  dart.addTypeCaches(create_account.CreateAccountPage);
+  dart.setMethodSignature(create_account.CreateAccountPage, () => ({
+    __proto__: dart.getMethods(create_account.CreateAccountPage.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(create_account.CreateAccountPage, I[0]);
+  dart.trackLibraries("packages/digital_clinic/ui/screens/auth/create_account/create_account.dart", {
+    "package:digital_clinic/ui/screens/auth/create_account/create_account.dart": create_account
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["create_account.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAM4B;AACxB,YAAO,sDACG,UACD,4CACmB,6BAChB,+BACC,kBACL,0BACO,0CAAiC,uFAElC,sCACW,iBACL,0CAAiC,4BACvC,yBACJ,wBAAU,6EACV,wBAAU,yMAIV,mCACM,yBACR,kGACA;IAKV;;;;;;EACF","file":"../../../../../../../../../../../packages/digital_clinic/ui/screens/auth/create_account/create_account.dart.lib.js"}');
+  // Exports:
+  return {
+    ui__screens__auth__create_account__create_account: create_account
+  };
+}));
+
+//# sourceMappingURL=create_account.dart.lib.js.map

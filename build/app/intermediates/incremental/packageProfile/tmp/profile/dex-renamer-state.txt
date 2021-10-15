@@ -1,0 +1,4 @@
+#Fri Jun 25 09:08:10 WAT 2021
+base.0=C\:\\Users\\USER\\Desktop\\FLUTTER PROJECTS\\DIGITAL CLINIC\\digital_clinic\\build\\app\\intermediates\\dex\\profile\\mergeDexProfile\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,675 @@
+define(['dart_sdk', 'packages/provider/src/provider.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/digital_clinic/ui/screens/auth/create_account/tabs/components/option_container.dart', 'packages/digital_clinic/ui/theme/colors.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/foundation/change_notifier.dart'], (function load__packages__digital_clinic__ui__screens__auth__create_account__tabs__personal_info__layouts__select_gender_dart(dart_sdk, packages__provider__src__provider$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__strut_style$46dart, packages__digital_clinic__ui__screens__auth__create_account__tabs__components__option_container$46dart, packages__digital_clinic__ui__theme__colors$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__foundation__change_notifier$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const provider = packages__provider__src__provider$46dart.src__provider;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const gesture_detector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__gesture_detector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const option_container = packages__digital_clinic__ui__screens__auth__create_account__tabs__components__option_container$46dart.ui__screens__auth__create_account__tabs__components__option_container;
+  const colors = packages__digital_clinic__ui__theme__colors$46dart.ui__theme__colors;
+  const colors$ = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const change_notifier = packages__flutter__src__foundation__change_notifier$46dart.src__foundation__change_notifier;
+  var select_gender = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    GenderStatusProviderL: () => (T.GenderStatusProviderL = dart.constFn(dart.legacy(select_gender.GenderStatusProvider)))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 11,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 11,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 18,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 19,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 19,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "borderColor",
+        [_Location_column]: 19,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9, C[10] || CT.C10, C[11] || CT.C11], T._LocationL());
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 17,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14, C[15] || CT.C15], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.constList([C[18] || CT.C18], T._LocationL());
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[17] || CT.C17,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 22,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 19,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 19,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "borderColor",
+        [_Location_column]: 19,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26], T._LocationL());
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 17,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29, C[30] || CT.C30], T._LocationL());
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 22,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.constList([C[36] || CT.C36], T._LocationL());
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[35] || CT.C35,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 19,
+        [_Location_line]: 53,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 19,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "borderColor",
+        [_Location_column]: 19,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40, C[41] || CT.C41], T._LocationL());
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 52,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 17,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.constList([C[44] || CT.C44, C[45] || CT.C45], T._LocationL());
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[43] || CT.C43,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.constList([C[48] || CT.C48], T._LocationL());
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[47] || CT.C47,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.constList([C[51] || CT.C51], T._LocationL());
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[50] || CT.C50,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 7,
+        [_Location_line]: 12,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.constList([C[54] || CT.C54, C[55] || CT.C55], T._LocationL());
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[53] || CT.C53,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 11,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"
+      });
+    }
+  }, false);
+  var C = Array(56).fill(void 0);
+  var I = ["package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart"];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var _maleBackgroundColor = dart.privateName(select_gender, "_maleBackgroundColor");
+  var _maleBorderColor = dart.privateName(select_gender, "_maleBorderColor");
+  var _femaleBackgroundColor = dart.privateName(select_gender, "_femaleBackgroundColor");
+  var _femaleBorderColor = dart.privateName(select_gender, "_femaleBorderColor");
+  var _otherBackgroundColor = dart.privateName(select_gender, "_otherBackgroundColor");
+  var _otherBorderColor = dart.privateName(select_gender, "_otherBorderColor");
+  select_gender.SelectGender = class SelectGender extends framework.StatelessWidget {
+    build(context) {
+      let stateProvider = provider['WatchContext|watch'](T.GenderStatusProviderL(), context);
+      return new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new text.Text.new("Gender", {style: new text_style.TextStyle.new({fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), new basic.SizedBox.new({height: 5.0, $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new basic.Expanded.new({child: new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+                    stateProvider.selectMale();
+                  }, T.VoidToNull()), child: new option_container.OptionContainer.new({label: "Male", backgroundColor: stateProvider[_maleBackgroundColor], borderColor: stateProvider[_maleBorderColor], $creationLocationd_0dea112b090073317d4: C[7] || CT.C7}), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), $creationLocationd_0dea112b090073317d4: C[16] || CT.C16}), new basic.SizedBox.new({width: 10.0, $creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), new basic.Expanded.new({child: new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+                    stateProvider.selectFemale();
+                  }, T.VoidToNull()), child: new option_container.OptionContainer.new({label: "Female", backgroundColor: stateProvider[_femaleBackgroundColor], borderColor: stateProvider[_femaleBorderColor], $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), $creationLocationd_0dea112b090073317d4: C[27] || CT.C27}), $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), new basic.SizedBox.new({width: 10.0, $creationLocationd_0dea112b090073317d4: C[34] || CT.C34}), new basic.Expanded.new({child: new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+                    stateProvider.selectOther();
+                  }, T.VoidToNull()), child: new option_container.OptionContainer.new({label: "Other", backgroundColor: stateProvider[_otherBackgroundColor], borderColor: stateProvider[_otherBorderColor], $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), $creationLocationd_0dea112b090073317d4: C[42] || CT.C42}), $creationLocationd_0dea112b090073317d4: C[46] || CT.C46})]), $creationLocationd_0dea112b090073317d4: C[49] || CT.C49})]), $creationLocationd_0dea112b090073317d4: C[52] || CT.C52});
+    }
+  };
+  (select_gender.SelectGender.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    select_gender.SelectGender.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = select_gender.SelectGender.prototype;
+  dart.addTypeTests(select_gender.SelectGender);
+  dart.addTypeCaches(select_gender.SelectGender);
+  dart.setMethodSignature(select_gender.SelectGender, () => ({
+    __proto__: dart.getMethods(select_gender.SelectGender.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(select_gender.SelectGender, I[0]);
+  var isMale = dart.privateName(select_gender, "GenderStatusProvider.isMale");
+  var isFemale = dart.privateName(select_gender, "GenderStatusProvider.isFemale");
+  var isOther = dart.privateName(select_gender, "GenderStatusProvider.isOther");
+  var _unSelectFemale = dart.privateName(select_gender, "_unSelectFemale");
+  var _unSelectOther = dart.privateName(select_gender, "_unSelectOther");
+  var _unSelectMale = dart.privateName(select_gender, "_unSelectMale");
+  select_gender.GenderStatusProvider = class GenderStatusProvider extends change_notifier.ChangeNotifier {
+    get isMale() {
+      return this[isMale];
+    }
+    set isMale(value) {
+      this[isMale] = value;
+    }
+    get isFemale() {
+      return this[isFemale];
+    }
+    set isFemale(value) {
+      this[isFemale] = value;
+    }
+    get isOther() {
+      return this[isOther];
+    }
+    set isOther(value) {
+      this[isOther] = value;
+    }
+    get yesContainerBackgroundColor() {
+      return this[_maleBackgroundColor];
+    }
+    get yesContainerBorderColor() {
+      return this[_maleBorderColor];
+    }
+    get noContainerBackgroundColor() {
+      return this[_femaleBackgroundColor];
+    }
+    get noContainerBorderColor() {
+      return this[_femaleBorderColor];
+    }
+    get otherBackgroundColor() {
+      return this[_otherBackgroundColor];
+    }
+    get otherBorderColor() {
+      return this[_otherBorderColor];
+    }
+    selectMale() {
+      this[_unSelectFemale]();
+      this[_unSelectOther]();
+      this.isMale = true;
+      this[_maleBackgroundColor] = colors.CustomColors.lightMoodyBlue;
+      this[_maleBorderColor] = colors.CustomColors.moodyBlue;
+      this.notifyListeners();
+    }
+    selectFemale() {
+      this[_unSelectMale]();
+      this[_unSelectOther]();
+      this.isFemale = true;
+      this[_femaleBackgroundColor] = colors.CustomColors.lightMoodyBlue;
+      this[_femaleBorderColor] = colors.CustomColors.moodyBlue;
+    }
+    selectOther() {
+      this[_unSelectMale]();
+      this[_unSelectFemale]();
+      this.isOther = true;
+      this[_otherBackgroundColor] = colors.CustomColors.lightMoodyBlue;
+      this[_otherBorderColor] = colors.CustomColors.moodyBlue;
+    }
+    [_unSelectMale]() {
+      this.isMale = false;
+      this[_maleBackgroundColor] = colors.CustomColors.backgroundColor;
+      this[_maleBorderColor] = colors$.Colors.grey._get(300);
+      this.notifyListeners();
+    }
+    [_unSelectFemale]() {
+      this.isFemale = false;
+      this[_femaleBackgroundColor] = colors.CustomColors.backgroundColor;
+      this[_femaleBorderColor] = colors$.Colors.grey._get(300);
+      this.notifyListeners();
+    }
+    [_unSelectOther]() {
+      this.isOther = false;
+      this[_otherBackgroundColor] = colors.CustomColors.backgroundColor;
+      this[_otherBorderColor] = colors$.Colors.grey._get(300);
+      this.notifyListeners();
+    }
+  };
+  (select_gender.GenderStatusProvider.new = function() {
+    this[isMale] = false;
+    this[isFemale] = false;
+    this[isOther] = false;
+    this[_maleBackgroundColor] = colors.CustomColors.backgroundColor;
+    this[_maleBorderColor] = colors$.Colors.grey._get(300);
+    this[_femaleBackgroundColor] = colors.CustomColors.backgroundColor;
+    this[_femaleBorderColor] = colors$.Colors.grey._get(300);
+    this[_otherBackgroundColor] = colors.CustomColors.backgroundColor;
+    this[_otherBorderColor] = colors$.Colors.grey._get(300);
+    select_gender.GenderStatusProvider.__proto__.new.call(this);
+    ;
+  }).prototype = select_gender.GenderStatusProvider.prototype;
+  dart.addTypeTests(select_gender.GenderStatusProvider);
+  dart.addTypeCaches(select_gender.GenderStatusProvider);
+  dart.setMethodSignature(select_gender.GenderStatusProvider, () => ({
+    __proto__: dart.getMethods(select_gender.GenderStatusProvider.__proto__),
+    selectMale: dart.fnType(dart.void, []),
+    selectFemale: dart.fnType(dart.void, []),
+    selectOther: dart.fnType(dart.void, []),
+    [_unSelectMale]: dart.fnType(dart.void, []),
+    [_unSelectFemale]: dart.fnType(dart.void, []),
+    [_unSelectOther]: dart.fnType(dart.void, [])
+  }));
+  dart.setGetterSignature(select_gender.GenderStatusProvider, () => ({
+    __proto__: dart.getGetters(select_gender.GenderStatusProvider.__proto__),
+    yesContainerBackgroundColor: dart.legacy(ui.Color),
+    yesContainerBorderColor: dart.legacy(ui.Color),
+    noContainerBackgroundColor: dart.legacy(ui.Color),
+    noContainerBorderColor: dart.legacy(ui.Color),
+    otherBackgroundColor: dart.legacy(ui.Color),
+    otherBorderColor: dart.legacy(ui.Color)
+  }));
+  dart.setLibraryUri(select_gender.GenderStatusProvider, I[0]);
+  dart.setFieldSignature(select_gender.GenderStatusProvider, () => ({
+    __proto__: dart.getFields(select_gender.GenderStatusProvider.__proto__),
+    isMale: dart.fieldType(dart.legacy(core.bool)),
+    isFemale: dart.fieldType(dart.legacy(core.bool)),
+    isOther: dart.fieldType(dart.legacy(core.bool)),
+    [_maleBackgroundColor]: dart.fieldType(dart.legacy(ui.Color)),
+    [_maleBorderColor]: dart.fieldType(dart.legacy(ui.Color)),
+    [_femaleBackgroundColor]: dart.fieldType(dart.legacy(ui.Color)),
+    [_femaleBorderColor]: dart.fieldType(dart.legacy(ui.Color)),
+    [_otherBackgroundColor]: dart.fieldType(dart.legacy(ui.Color)),
+    [_otherBorderColor]: dart.fieldType(dart.legacy(ui.Color))
+  }));
+  dart.trackLibraries("packages/digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart", {
+    "package:digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart": select_gender
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["select_gender.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAO4B;AACpB,0BAAwB,0DAAR,OAAO;AAE3B,YAAO,2CACkC,yCAC7B,yBACR,kBACE,kBACO,0CAAiC,+EAE1C,gCAAiB,8DACjB,6BACY,yBACR,+BACS,iDACE;AACqB,oBAA1B,AAAc,aAAD;6CAER,iDACE,yBACU,AAAc,aAAD,qCACjB,AAAc,aAAD,mMAIhC,+BAAgB,iEAChB,+BACS,iDACE;AACuB,oBAA5B,AAAc,aAAD;6CAER,iDACE,2BACU,AAAc,aAAD,uCACjB,AAAc,aAAD,uMAIhC,+BAAgB,iEAChB,+BACS,iDACE;AACsB,oBAA3B,AAAc,aAAD;6CAER,iDACE,0BACU,AAAc,aAAD,sCACjB,AAAc,aAAD;IAQ1C;;;;;;EACF;;;;;;;;;;;;;;;IAGO;;;;;;IACA;;;;;;IACA;;;;;;;AASoC;IAAoB;;AACxB;IAAgB;;AACb;IAAsB;;AAC1B;IAAkB;;AACpB;IAAqB;;AACzB;IAAiB;;AAG5B,MAAjB;AACgB,MAAhB;AACa,MAAb,cAAS;AACyC,MAAlD,6BAAoC;AACK,MAAzC,yBAAgC;AAEf,MAAjB;IACF;;AAGiB,MAAf;AACgB,MAAhB;AACe,MAAf,gBAAW;AACyC,MAApD,+BAAsC;AACK,MAA3C,2BAAkC;IACpC;;AAGiB,MAAf;AACiB,MAAjB;AACc,MAAd,eAAU;AACyC,MAAnD,8BAAqC;AACK,MAA1C,0BAAiC;IACnC;;AAGgB,MAAd,cAAS;AAC0C,MAAnD,6BAAoC;AACD,MAAnC,yBAA0B,AAAI,yBAAC;AAEd,MAAjB;IACF;;AAGkB,MAAhB,gBAAW;AAC0C,MAArD,+BAAsC;AACD,MAArC,2BAA4B,AAAI,yBAAC;AAEhB,MAAjB;IACF;;AAGiB,MAAf,eAAU;AAC0C,MAApD,8BAAqC;AACD,MAApC,0BAA2B,AAAI,yBAAC;AAEf,MAAjB;IACF;;;IAlEK,eAAS;IACT,iBAAW;IACX,gBAAU;IAET,6BAAoC;IACpC,yBAA0B,AAAI,yBAAC;IAC/B,+BAAsC;IACtC,2BAA4B,AAAI,yBAAC;IACjC,8BAAqC;IACrC,0BAA2B,AAAI,yBAAC;;;EA0DxC","file":"../../../../../../../../../../../../../../packages/digital_clinic/ui/screens/auth/create_account/tabs/personal_info/layouts/select_gender.dart.lib.js"}');
+  // Exports:
+  return {
+    ui__screens__auth__create_account__tabs__personal_info__layouts__select_gender: select_gender
+  };
+}));
+
+//# sourceMappingURL=select_gender.dart.lib.js.map

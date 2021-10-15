@@ -1,0 +1,547 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/widgets/form.dart', 'packages/digital_clinic/ui/screens/auth/widgets/custom_textformfield.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/page.dart', 'packages/digital_clinic/ui/screens/auth/forgot_password.dart', 'packages/sizer/sizer_ext.dart', 'packages/digital_clinic/ui/widgets/button.dart', 'packages/digital_clinic/ui/screens/auth/create_account/create_account.dart', 'packages/digital_clinic/ui/theme/colors.dart', 'packages/digital_clinic/ui/screens/auth/sign_up.dart'], (function load__packages__digital_clinic__ui__screens__auth__layouts__sign_in_form_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__widgets__form$46dart, packages__digital_clinic__ui__screens__auth__widgets__custom_textformfield$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__page$46dart, packages__digital_clinic__ui__screens__auth__forgot_password$46dart, packages__sizer__sizer_ext$46dart, packages__digital_clinic__ui__widgets__button$46dart, packages__digital_clinic__ui__screens__auth__create_account__create_account$46dart, packages__digital_clinic__ui__theme__colors$46dart, packages__digital_clinic__ui__screens__auth__sign_up$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const async = dart_sdk.async;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const form = packages__flutter__src__widgets__form$46dart.src__widgets__form;
+  const custom_textformfield = packages__digital_clinic__ui__screens__auth__widgets__custom_textformfield$46dart.ui__screens__auth__widgets__custom_textformfield;
+  const text_button = packages__flutter__src__material__icon_button$46dart.src__material__text_button;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const snack_bar = packages__flutter__src__material__icon_button$46dart.src__material__snack_bar;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const forgot_password = packages__digital_clinic__ui__screens__auth__forgot_password$46dart.ui__screens__auth__forgot_password;
+  const sizer_ext = packages__sizer__sizer_ext$46dart.sizer_ext;
+  const button = packages__digital_clinic__ui__widgets__button$46dart.ui__widgets__button;
+  const create_account = packages__digital_clinic__ui__screens__auth__create_account__create_account$46dart.ui__screens__auth__create_account__create_account;
+  const colors = packages__digital_clinic__ui__theme__colors$46dart.ui__theme__colors;
+  const sign_up = packages__digital_clinic__ui__screens__auth__sign_up$46dart.ui__screens__auth__sign_up;
+  var sign_in_form = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    FormStateL: () => (T.FormStateL = dart.constFn(dart.legacy(form.FormState)))(),
+    GlobalKeyOfFormStateL: () => (T.GlobalKeyOfFormStateL = dart.constFn(framework.GlobalKey$(T.FormStateL())))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    ForgotPasswordPageL: () => (T.ForgotPasswordPageL = dart.constFn(dart.legacy(forgot_password.ForgotPasswordPage)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    BuildContextLToForgotPasswordPageL: () => (T.BuildContextLToForgotPasswordPageL = dart.constFn(dart.fnType(T.ForgotPasswordPageL(), [T.BuildContextL()])))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    CreateAccountPageL: () => (T.CreateAccountPageL = dart.constFn(dart.legacy(create_account.CreateAccountPage)))(),
+    BuildContextLToCreateAccountPageL: () => (T.BuildContextLToCreateAccountPageL = dart.constFn(dart.fnType(T.CreateAccountPageL(), [T.BuildContextL()])))(),
+    SignUpPageL: () => (T.SignUpPageL = dart.constFn(dart.legacy(sign_up.SignUpPage)))(),
+    BuildContextLToSignUpPageL: () => (T.BuildContextLToSignUpPageL = dart.constFn(dart.fnType(T.SignUpPageL(), [T.BuildContextL()])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "hintText",
+        [_Location_column]: 31,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "obscureText",
+        [_Location_column]: 50,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "hintText",
+        [_Location_column]: 31,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "obscureText",
+        [_Location_column]: 53,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9, C[10] || CT.C10], T._LocationL());
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.constList([C[13] || CT.C13], T._LocationL());
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[12] || CT.C12,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17], T._LocationL());
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 57,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22, C[23] || CT.C23], T._LocationL());
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26], T._LocationL());
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 33,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29], T._LocationL());
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 52,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "content",
+        [_Location_column]: 19,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.constList([C[32] || CT.C32], T._LocationL());
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[31] || CT.C31,
+        [_Location_name]: null,
+        [_Location_column]: 60,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 47,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.constList([C[36] || CT.C36, C[37] || CT.C37], T._LocationL());
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[35] || CT.C35,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 68,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "labelColor",
+        [_Location_column]: 13,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 13,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.constList([C[41] || CT.C41, C[42] || CT.C42, C[43] || CT.C43, C[44] || CT.C44], T._LocationL());
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[40] || CT.C40,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47], T._LocationL());
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "key",
+        [_Location_column]: 7,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50, C[51] || CT.C51], T._LocationL());
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/USER/Desktop/FLUTTER%20PROJECTS/DIGITAL%20CLINIC/digital_clinic/lib/ui/screens/auth/layouts/sign_in_form.dart"
+      });
+    }
+  }, false);
+  var C = Array(52).fill(void 0);
+  var I = ["package:digital_clinic/ui/screens/auth/layouts/sign_in_form.dart"];
+  sign_in_form.SignInForm = class SignInForm extends framework.StatefulWidget {
+    createState() {
+      return new sign_in_form._SignInFormState.new();
+    }
+  };
+  (sign_in_form.SignInForm.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    sign_in_form.SignInForm.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = sign_in_form.SignInForm.prototype;
+  dart.addTypeTests(sign_in_form.SignInForm);
+  dart.addTypeCaches(sign_in_form.SignInForm);
+  dart.setMethodSignature(sign_in_form.SignInForm, () => ({
+    __proto__: dart.getMethods(sign_in_form.SignInForm.__proto__),
+    createState: dart.fnType(dart.legacy(sign_in_form._SignInFormState), [])
+  }));
+  dart.setLibraryUri(sign_in_form.SignInForm, I[0]);
+  var _formKey = dart.privateName(sign_in_form, "_formKey");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  sign_in_form._SignInFormState = class _SignInFormState extends framework.State$(dart.legacy(sign_in_form.SignInForm)) {
+    build(context) {
+      return new form.Form.new({key: this[_formKey], child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new custom_textformfield.CustomTextFormField.new({hintText: "Email", obscureText: false, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), new basic.SizedBox.new({height: 15.0, $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new custom_textformfield.CustomTextFormField.new({hintText: "Password", obscureText: true, $creationLocationd_0dea112b090073317d4: C[7] || CT.C7}), new basic.SizedBox.new({height: 1.0, $creationLocationd_0dea112b090073317d4: C[11] || CT.C11}), new text_button.TextButton.new({child: new text.Text.new("Forgot Password?", {style: new text_style.TextStyle.new({fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), onPressed: dart.fn(() => {
+                navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new forgot_password.ForgotPasswordPage.new({$creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), T.BuildContextLToForgotPasswordPageL())}));
+              }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), new basic.SizedBox.new({height: sizer_ext['SizerExt|get#h'](8.0), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), new button.CustomButton.new({label: "SIGN IN", onPressed: dart.fn(() => {
+                if (dart.test(this[_formKey].currentState.validate())) {
+                  scaffold.ScaffoldMessenger.of(context).showSnackBar(new snack_bar.SnackBar.new({content: new text.Text.new("Processing Data", {$creationLocationd_0dea112b090073317d4: C[27] || CT.C27}), $creationLocationd_0dea112b090073317d4: C[30] || CT.C30}));
+                  async.Timer.new(new core.Duration.new({seconds: 5}), dart.fn(() => {
+                    navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new create_account.CreateAccountPage.new({$creationLocationd_0dea112b090073317d4: C[33] || CT.C33}), T.BuildContextLToCreateAccountPageL())}));
+                  }, T.VoidToNull()));
+                }
+              }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[34] || CT.C34}), new button.CustomButton.new({label: "SIGN UP", labelColor: colors.CustomColors.moodyBlue, backgroundColor: colors.CustomColors.backgroundColor, onPressed: dart.fn(() => {
+                navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new sign_up.SignUpPage.new({$creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), T.BuildContextLToSignUpPageL())}));
+              }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[39] || CT.C39})]), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), $creationLocationd_0dea112b090073317d4: C[48] || CT.C48});
+    }
+  };
+  (sign_in_form._SignInFormState.new = function() {
+    this[_formKey] = T.GlobalKeyOfFormStateL().new();
+    sign_in_form._SignInFormState.__proto__.new.call(this);
+    ;
+  }).prototype = sign_in_form._SignInFormState.prototype;
+  dart.addTypeTests(sign_in_form._SignInFormState);
+  dart.addTypeCaches(sign_in_form._SignInFormState);
+  dart.setMethodSignature(sign_in_form._SignInFormState, () => ({
+    __proto__: dart.getMethods(sign_in_form._SignInFormState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(sign_in_form._SignInFormState, I[0]);
+  dart.setFieldSignature(sign_in_form._SignInFormState, () => ({
+    __proto__: dart.getFields(sign_in_form._SignInFormState.__proto__),
+    [_formKey]: dart.finalFieldType(dart.legacy(framework.GlobalKey$(dart.legacy(form.FormState))))
+  }));
+  dart.trackLibraries("packages/digital_clinic/ui/screens/auth/layouts/sign_in_form.dart", {
+    "package:digital_clinic/ui/screens/auth/layouts/sign_in_form.dart": sign_in_form
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["sign_in_form.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAaoC;IAAkB;;;;;;EACtD;;;;;;;;;;;;;;;UAM4B;AACxB,YAAO,yBACA,uBACE,gCACa,yBAChB,4DAA8B,sBAAsB,gEACpD,gCAAiB,+DACjB,4DAA8B,yBAAyB,+DACvD,gCAAiB,gEACjB,uCACS,kBACL,4BACO,0CAAiC,4FAE/B;AAIR,gBAHS,uCACR,OAAO,EACP,yCAA2B,QAAC,WAAY;6FAI9C,gCAAqB,4BAAJ,iEACjB,oCACS,sBACI;AAET,8BAAI,AAAS,AAAa;AAMtB,kBAFgB,AAAY,8BAAT,OAAO,eAAe,qCAChC,kBAAK;AAUd,kBAPF,gBAAM,gCAAkB,KAAI;AAMpB,oBAJI,uCACN,OAAO,EACP,yCACW,QAAC,WAAY;;;6FAQpC,oCACS,uBACkB,gDACK,gDACnB;AAE0D,gBADzD,uCACN,OAAO,EAAE,yCAA2B,QAAC,WAAY;;IAMjE;;;IA9DM,iBAAW;;;EA+DnB","file":"../../../../../../../../../../../packages/digital_clinic/ui/screens/auth/layouts/sign_in_form.dart.lib.js"}');
+  // Exports:
+  return {
+    ui__screens__auth__layouts__sign_in_form: sign_in_form
+  };
+}));
+
+//# sourceMappingURL=sign_in_form.dart.lib.js.map
